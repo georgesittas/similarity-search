@@ -6,7 +6,7 @@ This project contains our implementations for the following methods that solve t
 - [Randomized Projections into Hamming Hypercubes](https://www.researchgate.net/publication/311842520_Practical_linear-space_Approximate_Near_Neighbors_in_high_dimension)
 
 These methods can be used to search for neighbors in a given radius around a data point (range query), and thus they can be applied
-to the domain of clustering, by implementing the following algorithm:
+to the domain of clustering, as shown in the following algorithm:
 
 ```
 Clustering through reverse assignment using range queries
