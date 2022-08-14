@@ -3,7 +3,7 @@
 This project contains our implementations for the following methods that solve the (approximate) k-Nearest Neighbors problem:
 
 - [Locality Sensitive Hashing (LSH)](https://en.wikipedia.org/wiki/Locality-sensitive_hashing)
-- [Randomized Projections into multi-dimensional Hamming Cubes](https://www.researchgate.net/publication/311842520_Practical_linear-space_Approximate_Near_Neighbors_in_high_dimension)
+- [Randomized Projections into Hamming Hypercubes](https://www.researchgate.net/publication/311842520_Practical_linear-space_Approximate_Near_Neighbors_in_high_dimension)
 
 These methods can be used to search for neighbors in a given radius around a data point (range query), and thus they can be applied
 to the domain of clustering, by implementing the following algorithm:
@@ -12,7 +12,7 @@ to the domain of clustering, by implementing the following algorithm:
 Clustering through reverse assignment using range queries
 ---------------------------------------------------------
 
-1. Index all data points of interest in either data structure (LSH hash tables or a single HyperCube hash table)
+1. Index all data points of interest in either data structure (LSH hash tables or a single Hypercube hash table)
 2. Initialize all cluster centroids
 3. At each iteration, for each centroid execute a ranged query around it and assign all neighboring points to it
 4. The initial radii can be computed as min(dist between centers)/2 and after each iteration they are doubled
