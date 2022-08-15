@@ -14,10 +14,10 @@ Clustering through reverse assignment using range queries
 
 1. Index all data points of interest in either data structure (LSH hash tables or a single Hypercube hash table)
 2. Initialize all cluster centroids
-3. At each iteration, for each centroid execute a ranged query around it and assign all neighboring points to it
+3. At each iteration, for each centroid execute a ranged query around it and assign all neighboring points to it  
 4. The initial radii can be computed as min(dist between centers)/2 and after each iteration they are doubled
 5. Repeat the above steps until the algorithm converges to a fix point, or certain criteria are met
-6. If there are any unassigned points, we can assign them using the classic K-Means algorithm.
+6. If there are any unassigned points, we can assign them using the classic K-Means algorithm
 7. Output computed clusters
 ```
 
