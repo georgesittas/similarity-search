@@ -2,7 +2,7 @@
 
 This project contains our implementations for the following methods that solve the (approximate) k-Nearest Neighbors problem:
 
-- [Locality Sensitive Hashing (LSH)](https://en.wikipedia.org/wiki/Locality-sensitive_hashing), stable distributions method
+- [Locality Sensitive Hashing (stable distributions)](https://en.wikipedia.org/wiki/Locality-sensitive_hashing)
 - [Randomized Projections into Hamming Hypercubes](https://www.researchgate.net/publication/311842520_Practical_linear-space_Approximate_Near_Neighbors_in_high_dimension)
 
 These methods can be used to search for neighbors in a given radius around a data point (range query), and thus they can be applied
