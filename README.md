@@ -23,7 +23,7 @@ Clustering through reverse assignment using range queries
 
 In our case, we used the initialization scheme of [K-Means++](https://en.wikipedia.org/wiki/K-means%2B%2B). Additionally, we
 implemented the classic [Lloyd's algorithm](https://en.wikipedia.org/wiki/K-means_clustering), and we compared it to the above
-method, using the well-known [Silhouette](https://en.wikipedia.org/wiki/Silhouette_(clustering)) metric. See [here](https://github.com/GeorgeSittas/Similarity-Search/blob/main/report.pdf) for the project's documentation and the related benchmark results.
+method, using the well-known [Silhouette](https://en.wikipedia.org/wiki/Silhouette_(clustering)) metric. See [here](https://github.com/GeorgeSittas/Similarity-Search/blob/main/report.pdf) for the project's documentation and the related benchmark results. Read about the aforementioned algorithms [here](https://github.com/GeorgeSittas/Similarity-Search/blob/main/details.pdf).
 
 ## Contributors 
 
