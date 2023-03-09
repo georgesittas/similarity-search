@@ -1,12 +1,10 @@
 # Similarity Search
 
-This project contains our implementations for the following methods that solve the (approximate) k-Nearest Neighbors problem:
+This project contains implementations for the following dimensionality reduction methods and their application to
+the domains of similarity search (i.e. approximate k-Nearest Neighbors) and clustering:
 
 - [Locality Sensitive Hashing (stable distributions)](https://en.wikipedia.org/wiki/Locality-sensitive_hashing)
 - [Randomized Projections into Hamming Hypercubes](https://www.researchgate.net/publication/311842520_Practical_linear-space_Approximate_Near_Neighbors_in_high_dimension)
-
-These methods can be used to search for neighbors in a given radius around a data point (range query), and thus they can be applied
-to the domain of clustering, as shown in the following algorithm:
 
 ```
 Clustering through reverse assignment using range queries
@@ -21,9 +19,11 @@ Clustering through reverse assignment using range queries
 7. Output computed clusters
 ```
 
-In our case, we used the initialization scheme of [K-Means++](https://en.wikipedia.org/wiki/K-means%2B%2B). Additionally, we
-implemented the classic [Lloyd's algorithm](https://en.wikipedia.org/wiki/K-means_clustering), and we compared it to the above
-method, using the well-known [Silhouette](https://en.wikipedia.org/wiki/Silhouette_(clustering)) metric. See [here](https://github.com/GeorgeSittas/Similarity-Search/blob/main/report.pdf) for the project's documentation and the related benchmark results. Read about the aforementioned algorithms [here](https://github.com/GeorgeSittas/Similarity-Search/blob/main/details.pdf).
+For clustering, we used the initialization scheme of [K-Means++](https://en.wikipedia.org/wiki/K-means%2B%2B) and
+we implemented the classic [Lloyd's algorithm](https://en.wikipedia.org/wiki/K-means_clustering), comparing it to
+the above methods based on the well-known [Silhouette](https://en.wikipedia.org/wiki/Silhouette_(clustering)) metric.
+See the [project documentation, benchmark results](https://github.com/GeorgeSittas/Similarity-Search/blob/main/report.pdf)
+and the related [bibliography](https://github.com/GeorgeSittas/Similarity-Search/blob/main/details.pdf).
 
 ## Contributors 
 
